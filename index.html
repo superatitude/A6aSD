@@ -65,7 +65,7 @@
                 },hasChanged:function(){
                     if(b.location.hash=="#no-back"){
                         b.location.hash="#";
-                        b.location.href=x; //LINK PARA REDIRECIONAR AQUI
+                        b.location.href=; //LINK PARA REDIRECIONAR AQUI
                     }
                 },checkCompat:function(){
                     if(b.addEventListener){
@@ -80,10 +80,10 @@
                 },configure:function(){
                     if(b.location.hash=="#no-back"){
                         if(this.history_api){
-                            history.pushState;;(null,"","#");
+                            history.pushState(null,"","#");
                         }else{
                             b.location.hash="#";
-                            b.location.href=x; //LINK PARA REDIRECIONAR AQUI
+                            b.location.href=; //LINK PARA REDIRECIONAR AQUI
                         }
                     }
                     a.checkCompat();
